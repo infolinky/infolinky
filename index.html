@@ -1,215 +1,1058 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfoLinky - Best AI Tools & Digital Affiliate Marketing Resources</title>
-    <meta name="description" content="Discover top-rated AI tools, digital marketing resources, and exclusive affiliate deals on InfoLinky. Claim your free e-book today!">
-    <link rel="canonical" href="https://infolinky.github.io/infolinky/">
-    
-    <!-- Tailwind CSS CDN for Fast, Modern Styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            dark: '#0f172a',
-                            primary: '#38bdf8',
-                            accent: '#10b981'
-                        }
-                    }
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InfoLinky | High-Yield Software, Marketing Tools & Verified Affiliate Reviews</title>
+  <meta name="description" content="Discover verified marketing software, affiliate engines, and online business platforms vetted by InfoLinky. Claim our free 2025 Affiliate Blueprint E-Book today.">
+  <meta name="keywords" content="affiliate marketing tools, Semrush review, WarriorPlus offers, Amazon tech deals, Impact marketplace, CJ Affiliate, digital business">
+  <meta name="author" content="InfoLinky">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://infolinky.github.io/infolinky/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://infolinky.github.io/infolinky/">
+  <meta property="og:title" content="InfoLinky | High-Yield Software & Verified Affiliate Reviews">
+  <meta property="og:description" content="Scale your online income with curated tools, transparent performance breakdowns, and our free affiliate strategy guide.">
+  <meta property="og:image" content="https://infolinky.github.io/infolinky/assets/og-cover.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@InfoLinky">
+  <meta name="twitter:title" content="InfoLinky | Curated Tools for Digital Marketers">
+  <meta name="twitter:description" content="Expert insights, affiliate guides, and top-rated software comparisons. Download our free blueprint.">
+  <meta name="twitter:image" content="https://infolinky.github.io/infolinky/assets/og-cover.png">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://infolinky.github.io/infolinky/#website",
+        "url": "https://infolinky.github.io/infolinky/",
+        "name": "InfoLinky",
+        "description": "Curated Affiliate Marketplace & Marketing Intelligence Platform",
+        "publisher": {
+          "@id": "https://infolinky.github.io/infolinky/#organization"
         }
-    </script>
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://infolinky.github.io/infolinky/#organization",
+        "name": "InfoLinky",
+        "url": "https://infolinky.github.io/infolinky/",
+        "logo": "https://infolinky.github.io/infolinky/assets/logo.png",
+        "sameAs": [
+          "https://twitter.com/InfoLinky"
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://infolinky.github.io/infolinky/#featured-tools",
+        "name": "Top Recommended Affiliate & Growth Tools",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Semrush Pro Suite",
+            "url": "https://infolinky.github.io/infolinky/#tools"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Systeme.io All-in-One Engine",
+            "url": "https://infolinky.github.io/infolinky/#ebook"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Hostinger Cloud Infrastructure",
+            "url": "https://infolinky.github.io/infolinky/#tools"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics 4 (GA4) Placeholder -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <style>
+    /* CSS RESET & CORE VARIABLES */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --accent: #059669;
+      --accent-hover: #047857;
+      --bg-slate: #f8fafc;
+      --surface: #ffffff;
+      --text-dark: #0f172a;
+      --text-muted: #475569;
+      --border: #e2e8f0;
+      --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+      --card-shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+      --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --container-width: 1200px;
+      --radius: 8px;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--bg-slate);
+      color: var(--text-dark);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    a:hover {
+      color: var(--primary-hover);
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* HEADER & NAVIGATION */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+    .brand-logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .brand-logo span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--text-dark);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+    .mobile-menu-btn svg {
+      width: 28px;
+      height: 28px;
+      stroke: var(--text-dark);
+    }
+
+    /* ADVERTISEMENT CONTAINERS */
+    .ad-slot-wrapper {
+      width: 100%;
+      margin: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .ad-placeholder {
+      width: 100%;
+      max-width: 728px;
+      min-height: 90px;
+      background: #f1f5f9;
+      border: 1px dashed #cbd5e1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #94a3b8;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    /* HERO & LEAD MAGNET */
+    .hero-section {
+      padding: 4rem 0 3rem 0;
+      background: radial-gradient(circle at 100% 0%, #eff6ff 0%, #f8fafc 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: #e0e7ff;
+      color: #3730a3;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.35rem 0.75rem;
+      border-radius: 9999px;
+      margin-bottom: 1rem;
+    }
+    .hero-title {
+      font-size: 2.75rem;
+      line-height: 1.15;
+      font-weight: 900;
+      letter-spacing: -0.025em;
+      color: #0f172a;
+      margin-bottom: 1.25rem;
+    }
+    .hero-title span {
+      color: var(--primary);
+    }
+    .hero-lead {
+      font-size: 1.125rem;
+      color: var(--text-muted);
+      margin-bottom: 1.75rem;
+      line-height: 1.6;
+    }
+
+    /* SYSTEME.IO OPTIN CARD */
+    .optin-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: var(--card-shadow);
+      padding: 2.25rem;
+      position: relative;
+    }
+    .optin-card-header {
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .optin-card-header h3 {
+      font-size: 1.4rem;
+      color: var(--text-dark);
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+    }
+    .optin-card-header p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+    
+    .systeme-form-container {
+      width: 100%;
+    }
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+      color: var(--text-dark);
+    }
+    .form-control {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: border-color 0.15s ease-in-out;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0.85rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-accent {
+      background-color: var(--accent);
+      color: #ffffff;
+    }
+    .btn-accent:hover {
+      background-color: var(--accent-hover);
+      color: #ffffff;
+    }
+    .btn-primary {
+      background-color: var(--primary);
+      color: #ffffff;
+    }
+    .btn-primary:hover {
+      background-color: var(--primary-hover);
+      color: #ffffff;
+    }
+    .form-privacy-note {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 0.85rem;
+    }
+
+    /* NETWORKS TICKER / BADGES */
+    .networks-section {
+      padding: 2.5rem 0;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+    .networks-title {
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+    .network-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+    .network-badge-item {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #64748b;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* SECTION BASICS */
+    .section {
+      padding: 5rem 0;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 3rem auto;
+    }
+    .section-tag {
+      color: var(--primary);
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+      display: inline-block;
+    }
+    .section-header h2 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    /* PRODUCTS GRID */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+    .product-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--card-shadow-hover);
+    }
+    .product-badge-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 1.25rem;
+      background: #f1f5f9;
+      border-bottom: 1px solid var(--border);
+    }
+    .badge-network {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #334155;
+      text-transform: uppercase;
+    }
+    .badge-rating {
+      background: #fef08a;
+      color: #854d0e;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+    }
+    .product-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .product-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--text-dark);
+    }
+    .product-desc {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 1.25rem;
+    }
+    .product-features {
+      list-style: none;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+    .product-features li {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .product-features li svg {
+      flex-shrink: 0;
+      width: 16px;
+      height: 16px;
+      stroke: var(--accent);
+      margin-top: 2px;
+    }
+    .product-cta-bar {
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ABOUT US SECTION */
+    .about-section {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .about-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .about-content p {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    /* FTC DISCLOSURE & PRIVACY */
+    .compliance-box {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--primary);
+      border-radius: 4px;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+    .compliance-box h4 {
+      color: var(--text-dark);
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    /* CONTACT SECTION */
+    .contact-card {
+      max-width: 600px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2.5rem;
+      box-shadow: var(--card-shadow);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 4rem 0 2rem 0;
+      font-size: 0.875rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    .footer-col h4 {
+      color: #ffffff;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    .footer-col ul {
+      list-style: none;
+    }
+    .footer-col ul li {
+      margin-bottom: 0.6rem;
+    }
+    .footer-col ul a {
+      color: #94a3b8;
+    }
+    .footer-col ul a:hover {
+      color: #ffffff;
+    }
+    .footer-bottom {
+      border-top: 1px solid #1e293b;
+      padding-top: 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.15rem;
+      }
+      .mobile-menu-btn {
+        display: block;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+        padding: 1.5rem;
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+      }
+      .nav-links.active {
+        display: flex;
+      }
+    }
+  </style>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-sky-500 selection:text-white">
+<body>
 
-    <!-- HEADER / NAVIGATION -->
-    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/80 border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <span class="text-2xl font-black tracking-wider bg-gradient-to-r from-sky-400 to-emerald-400 bg-clip-text text-transparent">InfoLinky</span>
-            </div>
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-                <a href="#home" class="hover:text-sky-400 transition">Home</a>
-                <a href="#tools" class="hover:text-sky-400 transition">AI Tools & Deals</a>
-                <a href="#about" class="hover:text-sky-400 transition">About Us</a>
-                <a href="#privacy" class="hover:text-sky-400 transition">Privacy Policy</a>
-                <a href="#contact" class="hover:text-sky-400 transition">Contact Us</a>
-            </nav>
-            <div>
-                <a href="#home" class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl shadow-lg transition">Get Free E-Book</a>
-            </div>
-        </div>
-    </header>
+  <!-- STICKY HEADER -->
+  <header>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="https://infolinky.github.io/infolinky/" class="brand-logo" aria-label="InfoLinky Home">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+          </svg>
+          Info<span>Linky</span>
+        </a>
+        <button class="mobile-menu-btn" id="menuToggle" aria-label="Toggle navigation">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#networks">Networks</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#compliance">Privacy & FTC</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
-    <!-- HERO SECTION & SYSTEME.IO LEAD MAGNET -->
-    <section id="home" class="py-16 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="inline-block bg-sky-500/10 text-sky-400 border border-sky-500/20 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide uppercase mb-6">🚀 #1 Affiliate & AI Resource</span>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-                    Master AI & Scale Your <span class="bg-gradient-to-r from-sky-400 to-emerald-400 bg-clip-text text-transparent">Digital Business</span>
-                </h1>
-                <p class="text-lg text-slate-300 mb-8 leading-relaxed">
-                    Download our 100% Free E-Book: <strong>"The Ultimate AI Marketing Automation Playbook"</strong> and get instant access to hand-picked high-paying affiliate tools.
-                </p>
-                <div class="flex flex-wrap gap-4 text-sm text-slate-400">
-                    <span class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Verified Affiliate Deals</span>
-                    <span class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-2"></i> 100% Free Resources</span>
+  <!-- AD_SLOT_TOP -->
+  <div class="container ad-slot-wrapper">
+    <div class="ad-placeholder">
+      <span>Advertisement Slot [Top Leaderboard 728x90]</span>
+    </div>
+  </div>
+  <!-- /AD_SLOT_TOP -->
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="hero-badge">Curated Growth Intelligence</span>
+            <h1 class="hero-title">High-Converting Tools. <span>Zero Gimmicks.</span></h1>
+            <p class="hero-lead">InfoLinky benchmarks modern marketing software, hosting engines, and automated sales funnels. Stop testing low-yield strategies and build systems engineered to scale.</p>
+            <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+              <a href="#tools" class="btn btn-primary" style="width: auto; padding: 0.75rem 1.75rem;">Explore Vetted Tools</a>
+              <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">✓ Updated for Q2 2025</span>
+            </div>
+          </div>
+
+          <!-- FREE E-BOOK LEAD MAGNET / SYSTEME.IO INTEGRATION -->
+          <div id="ebook" class="optin-card">
+            <div class="optin-card-header">
+              <span style="color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Instant Download</span>
+              <h3>The 2025 Affiliate Blueprint</h3>
+              <p>Turn zero-traffic funnels into predictable $10K/mo engines. Get the framework delivered straight to your inbox.</p>
+            </div>
+
+            <!-- SYSTEME.IO FORM EMBED CONTAINER -->
+            <div class="systeme-form-container" id="systemeHeroOptin">
+              <form action="https://infolinky.systeme.io/optin-process" method="POST" target="_blank" novalidate>
+                <div class="form-group">
+                  <label for="lead_name">First Name</label>
+                  <input type="text" id="lead_name" name="first_name" class="form-control" placeholder="Alex" required>
                 </div>
-            </div>
-
-            <!-- Systeme.io Opt-in Embed Box -->
-            <div class="bg-slate-800/60 border border-slate-700 p-8 rounded-3xl shadow-2xl relative">
-                <div class="absolute -top-3 right-6 bg-emerald-500 text-slate-950 text-xs font-black uppercase px-3 py-1 rounded-full shadow">Free Instant Access</div>
-                <h3 class="text-2xl font-bold mb-2">Claim Your Free E-Book</h3>
-                <p class="text-sm text-slate-400 mb-6">Enter your email below to receive the guide directly to your inbox via our secure Systeme.io funnel.</p>
-                
-                <!-- SYSTEME.IO FORM EMBED PLACEHOLDER -->
-                <div class="systeme-form-wrapper bg-slate-900/90 p-6 rounded-2xl border border-slate-700 text-center">
-                    <p class="text-xs text-sky-400 mb-3 font-mono">--- SYSTEME.IO FORM EMBED CODE GOES HERE ---</p>
-                    <!-- Replace the iframe below with your exact Systeme.io funnel form code -->
-                    <iframe src="https://infolinky.systeme.io/" width="100%" height="320px" frameborder="0" style="border:none; border-radius:8px;"></iframe>
+                <div class="form-group">
+                  <label for="lead_email">Business Email</label>
+                  <input type="email" id="lead_email" name="email" class="form-control" placeholder="alex@domain.com" required>
                 </div>
+                <button type="submit" class="btn btn-accent">Download Free Blueprint (.PDF)</button>
+                <p class="form-privacy-note">Zero spam. Instant access link provided immediately upon submission.</p>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- AFFILIATE PRODUCTS & AI TOOLS GRID -->
-    <section id="tools" class="py-16 bg-slate-950/50 border-y border-slate-800/80">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold mb-4">Top Recommended AI & Marketing Tools</h2>
-                <p class="text-slate-400">Explore vetted software solutions to automate your business and boost affiliate commissions.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Product Card 1 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-sky-500/50 transition">
-                    <div>
-                        <div class="h-48 bg-slate-800 rounded-xl mb-6 overflow-hidden flex items-center justify-center relative">
-                            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="AI Tool" class="object-cover w-full h-full opacity-80">
-                            <span class="absolute top-3 left-3 bg-sky-500 text-slate-950 font-bold text-xs px-2.5 py-1 rounded-md">Top Rated</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Advanced AI Content Suite</h3>
-                        <p class="text-slate-400 text-sm mb-4">Generate SEO optimized blogs, landing page copy, and social media ads in seconds.</p>
-                    </div>
-                    <div>
-                        <div class="flex items-center text-amber-400 text-sm mb-4">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            <span class="text-slate-400 ml-2">(5.0)</span>
-                        </div>
-                        <!-- EDIT HERE: Affiliate Link -->
-                        <a href="#" rel="nofollow sponsored" target="_blank" class="block w-full text-center bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold py-2.5 rounded-xl transition">Get Exclusive Deal <i class="fa-solid fa-arrow-right ml-1"></i></a>
-                    </div>
-                </div>
-
-                <!-- Product Card 2 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-sky-500/50 transition">
-                    <div>
-                        <div class="h-48 bg-slate-800 rounded-xl mb-6 overflow-hidden flex items-center justify-center relative">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Funnel Builder" class="object-cover w-full h-full opacity-80">
-                            <span class="absolute top-3 left-3 bg-emerald-500 text-slate-950 font-bold text-xs px-2.5 py-1 rounded-md">Essential</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Automated Funnel Builder</h3>
-                        <p class="text-slate-400 text-sm mb-4">Build high-converting sales funnels, email marketing sequences, and checkout pages easily.</p>
-                    </div>
-                    <div>
-                        <div class="flex items-center text-amber-400 text-sm mb-4">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i>
-                            <span class="text-slate-400 ml-2">(4.8)</span>
-                        </div>
-                        <!-- EDIT HERE: Affiliate Link -->
-                        <a href="https://infolinky.systeme.io/" rel="nofollow sponsored" target="_blank" class="block w-full text-center bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold py-2.5 rounded-xl transition">Get Exclusive Deal <i class="fa-solid fa-arrow-right ml-1"></i></a>
-                    </div>
-                </div>
-
-                <!-- Product Card 3 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-sky-500/50 transition">
-                    <div>
-                        <div class="h-48 bg-slate-800 rounded-xl mb-6 overflow-hidden flex items-center justify-center relative">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="SEO Tracker" class="object-cover w-full h-full opacity-80">
-                            <span class="absolute top-3 left-3 bg-purple-500 text-white font-bold text-xs px-2.5 py-1 rounded-md">Must Have</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Smart SEO Analytics</h3>
-                        <p class="text-slate-400 text-sm mb-4">Track keyword rankings, analyze competitors, and optimize your website for maximum Google traffic.</p>
-                    </div>
-                    <div>
-                        <div class="flex items-center text-amber-400 text-sm mb-4">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            <span class="text-slate-400 ml-2">(4.9)</span>
-                        </div>
-                        <!-- EDIT HERE: Affiliate Link -->
-                        <a href="#" rel="nofollow sponsored" target="_blank" class="block w-full text-center bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold py-2.5 rounded-xl transition">Get Exclusive Deal <i class="fa-solid fa-arrow-right ml-1"></i></a>
-                    </div>
-                </div>
-            </div>
+    <!-- NETWORKS SHOWCASE -->
+    <section id="networks" class="networks-section">
+      <div class="container">
+        <p class="networks-title">Sourced Across Premier Affiliate Ecosystems</p>
+        <div class="network-badges">
+          <div class="network-badge-item">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zm0 9l-10-5v6l10 5 10-5v-6l-10 5z"/></svg>
+            Impact.com
+          </div>
+          <div class="network-badge-item">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83z"/></svg>
+            Amazon Associates
+          </div>
+          <div class="network-badge-item">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+            CJ Affiliate
+          </div>
+          <div class="network-badge-item">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.05.5-9 4.77-9 9.95 0 5.52 4.48 10 10 10 2.45 0 4.69-.89 6.43-2.36l-2.14-1.79C14.86 18.53 13.5 19 12 19z"/></svg>
+            WarriorPlus
+          </div>
+          <div class="network-badge-item">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h16c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1z"/></svg>
+            Semrush Partner
+          </div>
         </div>
+      </div>
     </section>
+
+    <!-- FEATURED PRODUCTS SECTION -->
+    <section id="tools" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tested & Verified</span>
+          <h2>Featured Performance Platforms</h2>
+          <p>We test tools on live traffic campaigns. Below are this month's top vetted platforms delivering verified conversion lift.</p>
+        </div>
+
+        <div class="product-grid">
+          <!-- CARD 1: Semrush -->
+          <article class="product-card">
+            <div class="product-badge-bar">
+              <span class="badge-network">Impact.com Network</span>
+              <span class="badge-rating">★ 4.9 / 5.0</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Semrush Pro Toolkit</h3>
+              <p class="product-desc">The industry benchmark for competitive analysis, keyword discovery, and backlink auditing.</p>
+              <ul class="product-features">
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  Keyword Magic Tool with 25B+ queries
+                </li>
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  Competitor gap and traffic analytics
+                </li>
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  Instant technical SEO issue auditor
+                </li>
+              </ul>
+              <div class="product-cta-bar">
+                <a href="https://www.semrush.com/" target="_blank" rel="nofollow sponsored" class="btn btn-primary">Claim 14-Day Free Access</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2: Systeme.io -->
+          <article class="product-card">
+            <div class="product-badge-bar">
+              <span class="badge-network">Direct Affiliate Hub</span>
+              <span class="badge-rating">★ 4.8 / 5.0</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Systeme.io Engine</h3>
+              <p class="product-desc">All-in-one platform replacing ClickFunnels, ActiveCampaign, and Teachable for online sales funnels.</p>
+              <ul class="product-features">
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  Funnels, email sequences & course hosting
+                </li>
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  Native automated affiliate program setup
+                </li>
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  Free Forever plan available (0$/mo)
+                </li>
+              </ul>
+              <div class="product-cta-bar">
+                <a href="https://infolinky.systeme.io/" target="_blank" rel="nofollow sponsored" class="btn btn-primary">Launch Free Account</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 3: Hostinger -->
+          <article class="product-card">
+            <div class="product-badge-bar">
+              <span class="badge-network">CJ Affiliate</span>
+              <span class="badge-rating">★ 4.8 / 5.0</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Hostinger Cloud Host</h3>
+              <p class="product-desc">Ultra-fast NVMe web hosting optimized for high-traffic WordPress review blogs and micro-sites.</p>
+              <ul class="product-features">
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  LiteSpeed web cache acceleration
+                </li>
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  Free SSL, domain, and weekly backups
+                </li>
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  99.9% uptime enterprise guarantee
+                </li>
+              </ul>
+              <div class="product-cta-bar">
+                <a href="https://www.hostinger.com/" target="_blank" rel="nofollow sponsored" class="btn btn-primary">Check Current Discounts (Up to 75% Off)</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 4: WarriorPlus Top Converter -->
+          <article class="product-card">
+            <div class="product-badge-bar">
+              <span class="badge-network">WarriorPlus Network</span>
+              <span class="badge-rating">★ 4.6 / 5.0</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">AI Funnel Accelerator</h3>
+              <p class="product-desc">Automated prompt stacks and pre-built conversion landing pages designed for rapid digital product deployments.</p>
+              <ul class="product-features">
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  Done-For-You lead generation templates
+                </li>
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  One-time low entry pricing model
+                </li>
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  Instant affiliate approval status
+                </li>
+              </ul>
+              <div class="product-cta-bar">
+                <a href="https://warriorplus.com/" target="_blank" rel="nofollow sponsored" class="btn btn-primary">Inspect Offer & Assets</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 5: Amazon Associates Pick -->
+          <article class="product-card">
+            <div class="product-badge-bar">
+              <span class="badge-network">Amazon Associates</span>
+              <span class="badge-rating">★ 4.9 / 5.0</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Elgato Stream Deck MK.2</h3>
+              <p class="product-desc">Physical macro workstation for content creators, streamlining video production and live marketing streams.</p>
+              <ul class="product-features">
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  15 customizable tactile LCD keys
+                </li>
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  Integrates with OBS, Twitch, and Zoom
+                </li>
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  Prime fast shipping eligibility
+                </li>
+              </ul>
+              <div class="product-cta-bar">
+                <a href="https://www.amazon.com/" target="_blank" rel="nofollow sponsored" class="btn btn-primary">Check Price on Amazon</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 6: Impact.com Tool -->
+          <article class="product-card">
+            <div class="product-badge-bar">
+              <span class="badge-network">Impact.com Marketplace</span>
+              <span class="badge-rating">★ 4.7 / 5.0</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Envato Elements Pass</h3>
+              <p class="product-desc">Unlimited downloads of professional WordPress themes, web graphics, video templates, and licensed audio.</p>
+              <ul class="product-features">
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  Over 16+ million digital creative assets
+                </li>
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  Commercial broad licensing coverage
+                </li>
+                <li>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  Simple single subscription fee
+                </li>
+              </ul>
+              <div class="product-cta-bar">
+                <a href="https://elements.envato.com/" target="_blank" rel="nofollow sponsored" class="btn btn-primary">Explore Creative Library</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- AD_SLOT_MIDDLE -->
+    <div class="container ad-slot-wrapper">
+      <div class="ad-placeholder">
+        <span>Advertisement Slot [Middle Banner 728x90]</span>
+      </div>
+    </div>
+    <!-- /AD_SLOT_MIDDLE -->
 
     <!-- ABOUT US SECTION -->
-    <section id="about" class="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-slate-800/40 border border-slate-700/80 rounded-3xl p-8 sm:p-12">
-            <h2 class="text-3xl font-bold mb-6 text-sky-400">About InfoLinky</h2>
-            <p class="text-slate-300 leading-relaxed mb-4">
-                Welcome to <strong>InfoLinky</strong> (`infolinky.github.io/infolinky`), your trusted digital hub for exploring cutting-edge Artificial Intelligence tools, automation software, and high-converting affiliate marketing resources.
-            </p>
-            <p class="text-slate-300 leading-relaxed">
-                Our mission is simple: to connect creators, entrepreneurs, and digital marketers with industry-leading tools that save time, scale businesses, and maximize online revenue through transparent, high-value recommendations.
-            </p>
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+            <span class="section-tag">About InfoLinky</span>
+            <h2>Independent Analysis, Data-Backed Recommendations</h2>
+          </div>
+          <p>Founded by digital marketers and systems engineers, <strong>InfoLinky</strong> was built to solve a clear problem: the web is flooded with low-grade software recommendations optimized solely for vendor payouts.</p>
+          <p>We take a performance-first approach. Every piece of software, hosting service, or commercial digital product featured on InfoLinky undergoes rigorous hands-on validation. We benchmark uptime, customer service responsiveness, ROI viability, and real conversion statistics before granting listing placement.</p>
+          <p>Whether you are launching your initial landing page through Systeme.io or managing multi-channel paid acquisition with Semrush, our goal is to deliver vetted, zero-bloat intelligence that protects your capital and accelerates your growth.</p>
         </div>
+      </div>
     </section>
 
-    <!-- PRIVACY POLICY SECTION -->
-    <section id="privacy" class="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800">
-        <div class="bg-slate-800/40 border border-slate-700/80 rounded-3xl p-8 sm:p-12">
-            <h2 class="text-3xl font-bold mb-6 text-sky-400">Privacy Policy</h2>
-            <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
-                <p>At <strong>InfoLinky</strong>, accessible from our GitHub Pages site, the privacy of our visitors is of extreme importance to us. This Privacy Policy document outlines the types of personal information is received and collected by InfoLinky and how it is used.</p>
-                <h3 class="text-lg font-bold text-white pt-2">Log Files & Cookies</h3>
-                <p>Like many other websites, InfoLinky makes use of log files. These files merely log visitors to the site—usually a standard procedure for hosting companies and a part of hosting services' analytics. Cookies are used to store information about visitors' preferences and the pages the visitor accessed.</p>
-                <h3 class="text-lg font-bold text-white pt-2">Affiliate Disclosure</h3>
-                <p>Some of the links on InfoLinky are affiliate links, meaning that at no additional cost to you, we may earn a commission if you click through and make a purchase.</p>
-            </div>
+    <!-- COMPLIANCE & PRIVACY SECTION (FTC & AdSense Ready) -->
+    <section id="compliance" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Transparency & Compliance</span>
+          <h2>Disclosure & Privacy Policy</h2>
+          <p>We adhere stringently to FTC guidelines and global data protection standards (GDPR / CCPA).</p>
         </div>
+
+        <div class="about-content">
+          <div class="compliance-box">
+            <h4>Federal Trade Commission (FTC) Affiliate Disclosure</h4>
+            <p>In accordance with FTC guidelines, please assume that all links pointing to external commercial platforms, software, and tools on <strong>InfoLinky</strong> are affiliate links. If you click on these links and make a purchase, InfoLinky may receive monetary compensation or other remuneration from the merchant at <strong>no additional cost to you</strong>. We only review and recommend solutions that our team has tested and validated for quality and business performance.</p>
+          </div>
+
+          <div class="compliance-box">
+            <h4>Amazon Associates Program Disclosure</h4>
+            <p>InfoLinky is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com and affiliated properties.</p>
+          </div>
+
+          <div style="font-size: 0.95rem; color: var(--text-muted);">
+            <h3 style="color: var(--text-dark); margin-bottom: 0.5rem; font-size: 1.15rem;">Privacy Policy Summary</h3>
+            <p style="margin-bottom: 1rem;">We respect your personal privacy. When you request our free E-Book or reach out through our contact forms, your information is processed through our secure, certified email partner (Systeme.io). We never sell, lease, or distribute your email address to unauthorized third parties.</p>
+            <p style="margin-bottom: 1rem;"><strong>Cookies & Advertising:</strong> We and our third-party advertising partners (such as Google AdSense) may utilize tracking cookies to display personalized advertisements based on your prior browsing history on this and other sites. You may opt out of personalized tracking at any time by configuring your browser's cookie settings or visiting aboutads.info.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- CONTACT US SECTION (WITH SYSTEME.IO / FUNNEL CONNECTION) -->
-    <section id="contact" class="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-                <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-                <p class="text-slate-400 mb-6">Have questions regarding our affiliate recommendations, digital tools, or partnerships? Get in touch with us directly through our funnel network.</p>
-                <ul class="space-y-4 text-slate-300 text-sm">
-                    <li class="flex items-center"><i class="fa-solid fa-globe text-sky-400 w-6"></i> Website: infolinky.github.io/infolinky</li>
-                    <li class="flex items-center"><i class="fa-solid fa-envelope text-sky-400 w-6"></i> Funnel Portal: infolinky.systeme.io</li>
-                </ul>
-            </div>
-            <div class="bg-slate-800/60 border border-slate-700 p-8 rounded-3xl">
-                <h3 class="text-xl font-bold mb-4">Send Us a Message</h3>
-                <!-- SYSTEME.IO CONTACT FORM EMBED -->
-                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 text-center">
-                    <p class="text-xs text-sky-400 mb-3 font-mono">--- SYSTEME.IO CONTACT EMBED HERE ---</p>
-                    <iframe src="https://infolinky.systeme.io/" width="100%" height="260px" frameborder="0" style="border:none; border-radius:8px;"></iframe>
-                </div>
-            </div>
+    <!-- CONTACT US SECTION (Systeme.io Integration) -->
+    <section id="contact" class="section" style="background: #f1f5f9;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2>Contact InfoLinky Support</h2>
+          <p>Have inquiries about our reviews or interested in having your tool tested? Send us a message.</p>
         </div>
+
+        <div class="contact-card">
+          <!-- SYSTEME.IO CONTACT FORM CONTAINER -->
+          <div id="systemeContactContainer">
+            <form action="https://infolinky.systeme.io/contact-process" method="POST" target="_blank">
+              <div class="form-group">
+                <label for="contact_name">Full Name</label>
+                <input type="text" id="contact_name" name="name" class="form-control" placeholder="Jane Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="contact_email">Email Address</label>
+                <input type="email" id="contact_email" name="email" class="form-control" placeholder="jane@domain.com" required>
+              </div>
+              <div class="form-group">
+                <label for="contact_subject">Subject</label>
+                <input type="text" id="contact_subject" name="subject" class="form-control" placeholder="Platform Inquiry / Product Testing" required>
+              </div>
+              <div class="form-group">
+                <label for="contact_message">Message</label>
+                <textarea id="contact_message" name="message" rows="4" class="form-control" placeholder="Your questions or partnership details..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Transmit Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <!-- FOOTER -->
-    <footer class="bg-slate-950 border-t border-slate-800/80 py-12 mt-16 text-center text-sm text-slate-500">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p>&copy; 2026 InfoLinky. All rights reserved. Hosted on GitHub Pages | Powered by Systeme.io</p>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="color: #ffffff; margin-bottom: 1rem;">
+            Info<span>Linky</span>
+          </div>
+          <p style="margin-bottom: 1rem; max-width: 380px;">Engineering clarity in the digital marketing and software sector. Tested affiliate tools, unbiased software comparisons, and scale blueprints.</p>
+          <p style="font-size: 0.8rem; color: #64748b;">Primary Platform: infolinky.github.io/infolinky<br>Funnel Engine: infolinky.systeme.io</p>
         </div>
-    </footer>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#networks">Networks</a></li>
+            <li><a href="#tools">Vetted Tools</a></li>
+            <li><a href="#ebook">Free E-Book</a></li>
+            <li><a href="#about">About InfoLinky</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal & Data</h4>
+          <ul>
+            <li><a href="#compliance">FTC Disclosure</a></li>
+            <li><a href="#compliance">Privacy Policy</a></li>
+            <li><a href="#compliance">Terms of Service</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 InfoLinky. All rights reserved. Designated trademarks and brands belong to their respective proprietors.</p>
+      </div>
+    </div>
+  </footer>
 
+  <!-- MINIMAL JAVASCRIPT FOR NAVIGATION -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile Navigation Toggle
+      const menuBtn = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+
+      if (menuBtn && navLinks) {
+        menuBtn.addEventListener('click', function() {
+          navLinks.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        navLinks.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            navLinks.classList.remove('active');
+          });
+        });
+      }
+    });
+  </script>
 </body>
 </html>
