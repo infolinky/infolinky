@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://infolinky.github.io/infolinky/sitemap.xml
